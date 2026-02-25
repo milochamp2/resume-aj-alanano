@@ -2,52 +2,48 @@ import Section from "./Section";
 
 const projects = [
   {
-    title: "SaaS Dashboard Starter",
+    title: "HyperFit Website",
     description:
-      "Full-stack dashboard with authentication, role-based access, and real-time data — built on Next.js and Supabase.",
-    tags: ["Next.js", "Supabase", "Tailwind CSS", "TypeScript"],
-    link: "#",
-  },
-  {
-    title: "AI Content Pipeline",
-    description:
-      "Automated content generation workflow using GPT and Claude APIs, orchestrated with n8n and delivered via webhook.",
-    tags: ["n8n", "OpenAI", "Claude API", "Webhooks"],
-    link: "#",
-  },
-  {
-    title: "High-Converting Landing Page",
-    description:
-      "Responsive, performance-optimized landing page with modern animations, SEO metadata, and analytics integration.",
+      "Designed and built a modern, responsive website for HyperFit — a fitness brand based in Australia. Clean UI, fast performance, optimized for conversions.",
     tags: ["Next.js", "Tailwind CSS", "Vercel", "SEO"],
-    link: "#",
+    link: "https://hyperfit.com.au",
+  },
+  {
+    title: "Building Inspection Dashboard",
+    description:
+      "Analytics and performance metric dashboard for Building Inspection Mornington and Building Inspectors Melbourne. Data-driven insights for operational efficiency.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Analytics"],
+    link: null,
+  },
+  {
+    title: "Personal Financial Budgeting App",
+    description:
+      "Custom budgeting application for tracking income, expenses, and savings goals. Built for personal use with clean data visualization.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    link: null,
   },
 ];
 
 export default function Projects() {
   return (
-    <Section
-      id="projects"
-      title="Projects"
-      subtitle="Selected work and builds."
-    >
-      <div className="grid gap-5 sm:grid-cols-3">
+    <Section id="projects" title="Projects" subtitle="Real work and builds.">
+      <div className="grid gap-4 sm:grid-cols-3">
         {projects.map((p) => (
           <div
             key={p.title}
-            className="glass-card flex flex-col rounded-2xl p-5"
+            className="glass-card flex flex-col rounded-2xl p-4"
           >
-            <h3 className="mb-2 text-lg font-semibold text-white">
+            <h3 className="mb-1.5 text-base font-semibold text-white">
               {p.title}
             </h3>
             <p className="mb-3 flex-1 text-sm leading-relaxed text-slate-400">
               {p.description}
             </p>
-            <div className="mb-3 flex flex-wrap gap-2">
+            <div className="mb-2 flex flex-wrap gap-1.5">
               {p.tags.map((t) => (
                 <span
                   key={t}
-                  className="rounded-full bg-indigo/10 px-2.5 py-0.5 text-xs font-medium text-indigo-light backdrop-blur-sm"
+                  className="rounded-full bg-indigo/10 px-2 py-0.5 text-xs font-medium text-indigo-light"
                 >
                   {t}
                 </span>
@@ -56,11 +52,13 @@ export default function Projects() {
             {p.link && (
               <a
                 href={p.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-auto inline-flex items-center gap-1 text-sm font-medium text-aqua transition-colors hover:text-aqua-light"
               >
-                View
+                Visit
                 <svg
-                  className="h-4 w-4"
+                  className="h-3.5 w-3.5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

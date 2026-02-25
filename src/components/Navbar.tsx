@@ -1,36 +1,44 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import Logo from "./Logo";
 
 const links = [
-  { href: "#skills", label: "Stack" },
-  { href: "#impact", label: "Impact" },
-  { href: "#projects", label: "Projects" },
-  { href: "#why-me", label: "Why Me" },
-  { href: "#contact", label: "Contact" },
+  { href: "/", label: "Home" },
+  { href: "/stack", label: "Stack" },
+  { href: "/projects", label: "Projects" },
+  { href: "/impact", label: "Impact" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-white/[0.06] bg-navy/60 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-3">
-        <a href="#" className="flex items-center">
-          <Logo size={28} />
-        </a>
+      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-2.5">
+        <Link href="/" className="flex items-center">
+          <Logo size={26} />
+        </Link>
 
         {/* Desktop */}
-        <ul className="hidden gap-8 md:flex">
+        <ul className="hidden gap-6 md:flex">
           {links.map((l) => (
             <li key={l.href}>
-              <a
+              <Link
                 href={l.href}
-                className="text-sm text-slate-400 transition-colors hover:text-white"
+                className={`text-sm transition-colors ${
+                  pathname === l.href
+                    ? "font-medium text-white"
+                    : "text-slate-400 hover:text-white"
+                }`}
               >
                 {l.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -42,7 +50,7 @@ export default function Navbar() {
           aria-label="Toggle menu"
         >
           <svg
-            className="h-6 w-6"
+            className="h-5 w-5"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -67,16 +75,20 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <ul className="glass-strong border-t border-white/[0.06] px-6 pb-4 md:hidden">
+        <ul className="glass-strong border-t border-white/[0.06] px-6 pb-3 md:hidden">
           {links.map((l) => (
             <li key={l.href}>
-              <a
+              <Link
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="block py-2 text-sm text-slate-400 transition-colors hover:text-white"
+                className={`block py-1.5 text-sm transition-colors ${
+                  pathname === l.href
+                    ? "font-medium text-white"
+                    : "text-slate-400 hover:text-white"
+                }`}
               >
                 {l.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

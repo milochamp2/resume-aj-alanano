@@ -16,16 +16,16 @@ export default function Section({
   className = "",
 }: SectionProps) {
   return (
-    <section id={id} className={`py-14 md:py-20 ${className}`}>
+    <section id={id} className={`py-10 md:py-14 ${className}`}>
       <div className="mx-auto max-w-5xl px-6">
         <SectionReveal>
           {title && (
-            <div className="mb-10 text-center">
-              <h2 className="text-3xl font-bold text-white md:text-4xl">
+            <div className="mb-6 text-center">
+              <h2 className="text-2xl font-bold text-white md:text-3xl">
                 {title}
               </h2>
               {subtitle && (
-                <p className="mt-2 text-lg text-slate-400">{subtitle}</p>
+                <p className="mt-1.5 text-base text-slate-400">{subtitle}</p>
               )}
             </div>
           )}

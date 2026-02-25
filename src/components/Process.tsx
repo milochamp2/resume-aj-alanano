@@ -4,20 +4,17 @@ const steps = [
   {
     number: "01",
     title: "Discover",
-    description:
-      "Clarify goals, pages, content, and brand direction.",
+    description: "Clarify goals, pages, content, and brand direction.",
   },
   {
     number: "02",
     title: "Build",
-    description:
-      "Modern Next.js + Tailwind implementation with scalable structure.",
+    description: "Modern Next.js + Tailwind implementation with scalable structure.",
   },
   {
     number: "03",
     title: "Deploy",
-    description:
-      "Vercel deployment, DNS configuration, and launch support.",
+    description: "Vercel deployment, DNS configuration, and launch support.",
   },
 ];
 
@@ -28,19 +25,16 @@ export default function Process() {
       title="Process"
       subtitle="How I work — simple and direct."
     >
-      <div className="grid gap-5 sm:grid-cols-3">
+      <div className="grid gap-3 sm:grid-cols-3">
         {steps.map((s) => (
-          <div
-            key={s.number}
-            className="glass-card rounded-2xl p-5"
-          >
-            <span className="mb-3 block text-3xl font-extrabold text-indigo/40">
+          <div key={s.number} className="glass-card rounded-2xl p-4">
+            <span className="mb-2 block text-2xl font-extrabold text-indigo/40">
               {s.number}
             </span>
-            <h3 className="mb-2 text-lg font-semibold text-white">
+            <h3 className="mb-1 text-sm font-semibold text-white">
               {s.title}
             </h3>
-            <p className="text-sm leading-relaxed text-slate-400">
+            <p className="text-xs leading-relaxed text-slate-400">
               {s.description}
             </p>
           </div>

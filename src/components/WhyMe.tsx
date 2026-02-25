@@ -30,18 +30,18 @@ export default function WhyMe() {
       title="Why Work With Me"
       subtitle="What you get beyond the code."
     >
-      <div className="mx-auto max-w-2xl space-y-3">
+      <div className="mx-auto max-w-2xl space-y-2">
         {reasons.map((r, i) => (
           <div
             key={r.title}
-            className="glass-card flex items-start gap-4 rounded-2xl p-4"
+            className="glass-card flex items-start gap-3 rounded-xl p-3"
           >
-            <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-indigo/15 text-xs font-bold text-indigo-light">
+            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-indigo/15 text-xs font-bold text-indigo-light">
               {String(i + 1).padStart(2, "0")}
             </span>
             <div>
               <h3 className="text-sm font-semibold text-white">{r.title}</h3>
-              <p className="mt-0.5 text-sm text-slate-400">{r.description}</p>
+              <p className="text-xs text-slate-400">{r.description}</p>
             </div>
           </div>
         ))}
