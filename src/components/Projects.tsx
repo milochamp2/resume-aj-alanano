@@ -9,25 +9,32 @@ const projects = [
     link: "https://hyperfit.com.au",
   },
   {
-    title: "Building Inspection Dashboard",
+    title: "BIM Mornington Dashboard",
     description:
-      "Analytics and performance metric dashboard for Building Inspection Mornington and Building Inspectors Melbourne. Data-driven insights for operational efficiency.",
+      "Analytics and performance metric dashboard for Building Inspection Mornington. Data-driven insights for operational efficiency.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Analytics"],
-    link: null,
+    link: "https://bim-dashboard-db-16138.vercel.app",
   },
   {
-    title: "Personal Financial Budgeting App",
+    title: "BIM Melbourne Dashboard",
+    description:
+      "Analytics and performance metric dashboard for Building Inspectors Melbourne. Data-driven insights for operational efficiency.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Analytics"],
+    link: "https://bimelb-dashboard-db-32015.vercel.app",
+  },
+  {
+    title: "Financial Budgeting App",
     description:
       "Custom budgeting application for tracking income, expenses, and savings goals. Built for personal use with clean data visualization.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
-    link: null,
+    link: "https://financial-budget-planning.vercel.app",
   },
 ];
 
 export default function Projects() {
   return (
     <Section id="projects" title="Projects" subtitle="Real work and builds.">
-      <div className="grid gap-4 sm:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {projects.map((p) => (
           <div
             key={p.title}
