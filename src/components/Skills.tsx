@@ -32,20 +32,20 @@ const groups = [
 export default function Skills() {
   return (
     <Section id="skills" title="Skills" subtitle="Technologies I work with daily.">
-      <div className="grid gap-8 sm:grid-cols-2">
+      <div className="grid gap-5 sm:grid-cols-2">
         {groups.map((g) => (
           <div
             key={g.label}
-            className="rounded-2xl border border-white/10 bg-white/[0.03] p-6"
+            className="glass rounded-2xl p-5"
           >
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-aqua">
+            <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-aqua">
               {g.label}
             </h3>
             <div className="flex flex-wrap gap-2">
               {g.items.map((item) => (
                 <span
                   key={item}
-                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-slate-300"
+                  className="glass rounded-full px-3 py-1 text-sm text-slate-300"
                 >
                   {item}
                 </span>

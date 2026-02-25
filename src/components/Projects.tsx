@@ -31,23 +31,23 @@ export default function Projects() {
       title="Projects"
       subtitle="Selected work and builds."
     >
-      <div className="grid gap-6 sm:grid-cols-3">
+      <div className="grid gap-5 sm:grid-cols-3">
         {projects.map((p) => (
           <div
             key={p.title}
-            className="flex flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-6"
+            className="glass flex flex-col rounded-2xl p-5 transition-all hover:border-indigo/30 hover:shadow-lg hover:shadow-indigo/5"
           >
             <h3 className="mb-2 text-lg font-semibold text-white">
               {p.title}
             </h3>
-            <p className="mb-4 flex-1 text-sm leading-relaxed text-slate-400">
+            <p className="mb-3 flex-1 text-sm leading-relaxed text-slate-400">
               {p.description}
             </p>
-            <div className="mb-4 flex flex-wrap gap-2">
+            <div className="mb-3 flex flex-wrap gap-2">
               {p.tags.map((t) => (
                 <span
                   key={t}
-                  className="rounded-full bg-indigo/10 px-2.5 py-0.5 text-xs font-medium text-indigo-light"
+                  className="rounded-full bg-indigo/10 px-2.5 py-0.5 text-xs font-medium text-indigo-light backdrop-blur-sm"
                 >
                   {t}
                 </span>

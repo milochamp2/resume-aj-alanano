@@ -28,11 +28,11 @@ export default function Process() {
       title="Process"
       subtitle="How I work — simple and direct."
     >
-      <div className="grid gap-6 sm:grid-cols-3">
+      <div className="grid gap-5 sm:grid-cols-3">
         {steps.map((s) => (
           <div
             key={s.number}
-            className="rounded-2xl border border-white/10 bg-white/[0.03] p-6"
+            className="glass rounded-2xl p-5"
           >
             <span className="mb-3 block text-3xl font-extrabold text-indigo/40">
               {s.number}

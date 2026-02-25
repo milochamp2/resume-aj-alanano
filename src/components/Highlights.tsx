@@ -40,13 +40,13 @@ export default function Highlights() {
       title="What I Do"
       subtitle="Core areas of focus."
     >
-      <div className="grid gap-6 sm:grid-cols-3">
+      <div className="grid gap-5 sm:grid-cols-3">
         {cards.map((c) => (
           <div
             key={c.title}
-            className="group rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition-colors hover:border-indigo/40"
+            className="glass group rounded-2xl p-5 transition-all hover:border-indigo/30 hover:shadow-lg hover:shadow-indigo/5"
           >
-            <div className="mb-4 inline-flex rounded-xl bg-indigo/10 p-3 text-indigo-light">
+            <div className="mb-3 inline-flex rounded-xl bg-indigo/10 p-2.5 text-indigo-light backdrop-blur-sm">
               {c.icon}
             </div>
             <h3 className="mb-2 text-lg font-semibold text-white">

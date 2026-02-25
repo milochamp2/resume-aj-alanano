@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen items-center overflow-hidden pt-20"
+      className="relative flex min-h-[90vh] items-center overflow-hidden pt-16"
     >
       {/* Gradient glow */}
       <div className="pointer-events-none absolute inset-0">
@@ -12,7 +12,7 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-5xl px-6 text-center">
         {/* Badge */}
-        <span className="mb-6 inline-block rounded-full border border-aqua/30 bg-aqua/10 px-4 py-1.5 text-xs font-medium text-aqua">
+        <span className="glass mb-5 inline-block rounded-full border-aqua/20 px-4 py-1.5 text-xs font-medium text-aqua">
           Available for side projects
         </span>
 
@@ -25,23 +25,23 @@ export default function Hero() {
           <span className="text-slate-400">(Vibe Coder)</span>
         </h1>
 
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300 md:text-xl">
+        <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-slate-300 md:text-xl">
           I build modern Next.js applications, high-converting landing pages,
           and automation-first systems using Supabase, n8n/Zapier, and AI (GPT +
           Claude).
         </p>
 
-        <p className="mx-auto mt-4 max-w-xl text-base text-slate-400">
+        <p className="mx-auto mt-3 max-w-xl text-base text-slate-400">
           Clean UI. Fast builds. Scalable foundations. I focus on modern web
           architecture, strong branding, and intelligent automation systems that
           help businesses move faster.
         </p>
 
         {/* CTAs */}
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <a
             href="mailto:alananoaj@gmail.com"
-            className="rounded-2xl bg-indigo px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-indigo-light"
+            className="rounded-2xl bg-indigo/90 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-indigo-light hover:shadow-lg hover:shadow-indigo/20"
           >
             Contact Me
           </a>
@@ -49,7 +49,7 @@ export default function Hero() {
             href="https://www.linkedin.com/in/alananoaj7/"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-2xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+            className="glass rounded-2xl px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-white/10"
           >
             LinkedIn
           </a>
@@ -57,7 +57,7 @@ export default function Hero() {
             href="https://github.com/milochamp2"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-2xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+            className="glass rounded-2xl px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-white/10"
           >
             GitHub
           </a>

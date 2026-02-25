@@ -14,8 +14,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-navy/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+    <nav className="fixed top-0 z-50 w-full border-b border-white/[0.06] bg-navy/60 backdrop-blur-xl">
+      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-3">
         <a href="#" className="text-lg font-bold text-white">
           AJ<span className="text-indigo">.</span>
         </a>
@@ -66,7 +66,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <ul className="border-t border-white/10 bg-navy px-6 pb-4 md:hidden">
+        <ul className="glass-strong border-t border-white/[0.06] px-6 pb-4 md:hidden">
           {links.map((l) => (
             <li key={l.href}>
               <a
