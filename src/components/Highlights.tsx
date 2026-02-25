@@ -44,7 +44,7 @@ export default function Highlights() {
         {cards.map((c) => (
           <div
             key={c.title}
-            className="glass group rounded-2xl p-5 transition-all hover:border-indigo/30 hover:shadow-lg hover:shadow-indigo/5"
+            className="glass-card group rounded-2xl p-5"
           >
             <div className="mb-3 inline-flex rounded-xl bg-indigo/10 p-2.5 text-indigo-light backdrop-blur-sm">
               {c.icon}

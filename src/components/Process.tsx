@@ -32,7 +32,7 @@ export default function Process() {
         {steps.map((s) => (
           <div
             key={s.number}
-            className="glass rounded-2xl p-5"
+            className="glass-card rounded-2xl p-5"
           >
             <span className="mb-3 block text-3xl font-extrabold text-indigo/40">
               {s.number}

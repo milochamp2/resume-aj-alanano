@@ -1,51 +1,62 @@
 import Section from "./Section";
 
-const groups = [
+const layers = [
   {
-    label: "Frontend",
-    items: ["Next.js", "React", "TypeScript", "JavaScript", "Tailwind CSS"],
+    label: "Core Stack",
+    color: "text-aqua",
+    borderColor: "border-aqua/20",
+    items: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Supabase"],
   },
   {
-    label: "Backend",
+    label: "Automation Layer",
+    color: "text-indigo-light",
+    borderColor: "border-indigo/20",
+    items: ["n8n", "Zapier", "Webhooks", "API Wiring", "Edge Functions"],
+  },
+  {
+    label: "AI Integration",
+    color: "text-aqua-light",
+    borderColor: "border-aqua/15",
     items: [
-      "Supabase (PostgreSQL, Auth, Storage)",
-      "API Integration",
-      "Edge Functions",
+      "OpenAI GPT",
+      "Claude API",
+      "Prompt Engineering",
+      "Structured Outputs",
     ],
   },
   {
-    label: "Automation & AI",
-    items: [
-      "n8n",
-      "Zapier",
-      "OpenAI GPT Integration",
-      "Claude API Integration",
-      "Webhooks",
-    ],
-  },
-  {
-    label: "Deployment",
-    items: ["Vercel", "DNS & Domain Setup"],
+    label: "Infrastructure",
+    color: "text-slate-300",
+    borderColor: "border-white/10",
+    items: ["Vercel", "DNS & Domains", "PostgreSQL", "Auth & Storage"],
   },
 ];
 
 export default function Skills() {
   return (
-    <Section id="skills" title="Skills" subtitle="Technologies I work with daily.">
-      <div className="grid gap-5 sm:grid-cols-2">
-        {groups.map((g) => (
-          <div
-            key={g.label}
-            className="glass rounded-2xl p-5"
-          >
-            <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-aqua">
-              {g.label}
-            </h3>
+    <Section
+      id="skills"
+      title="Tech Stack"
+      subtitle="Strategically layered for speed and scale."
+    >
+      <div className="space-y-4">
+        {layers.map((layer) => (
+          <div key={layer.label} className="glass-card rounded-2xl p-5">
+            <div className="mb-3 flex items-center gap-3">
+              <span
+                className={`text-xs font-semibold uppercase tracking-widest ${layer.color}`}
+              >
+                {layer.label}
+              </span>
+              <div
+                className={`h-px flex-1 border-t ${layer.borderColor}`}
+              />
+            </div>
             <div className="flex flex-wrap gap-2">
-              {g.items.map((item) => (
+              {layer.items.map((item) => (
                 <span
                   key={item}
-                  className="glass rounded-full px-3 py-1 text-sm text-slate-300"
+                  className="glass rounded-full px-3 py-1 text-sm text-slate-300 transition-colors hover:text-white"
                 >
                   {item}
                 </span>

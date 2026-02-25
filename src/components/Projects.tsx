@@ -35,7 +35,7 @@ export default function Projects() {
         {projects.map((p) => (
           <div
             key={p.title}
-            className="glass flex flex-col rounded-2xl p-5 transition-all hover:border-indigo/30 hover:shadow-lg hover:shadow-indigo/5"
+            className="glass-card flex flex-col rounded-2xl p-5"
           >
             <h3 className="mb-2 text-lg font-semibold text-white">
               {p.title}
