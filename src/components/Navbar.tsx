@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Logo from "./Logo";
 
 const links = [
   { href: "#skills", label: "Stack" },
@@ -16,8 +17,8 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-white/[0.06] bg-navy/60 backdrop-blur-xl">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-3">
-        <a href="#" className="text-lg font-bold text-white">
-          AJ<span className="text-indigo">.</span>
+        <a href="#" className="flex items-center">
+          <Logo size={28} />
         </a>
 
         {/* Desktop */}

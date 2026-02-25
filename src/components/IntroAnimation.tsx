@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Logo from "./Logo";
 
 export default function IntroAnimation({
   children,
@@ -31,10 +32,10 @@ export default function IntroAnimation({
         >
           {/* Logo mark */}
           <div
-            className="animate-intro-logo-pulse mb-4 text-5xl font-extrabold text-white"
+            className="animate-intro-logo-pulse mb-4"
             style={{ animationDelay: "0.1s" }}
           >
-            AJ<span className="text-indigo">.</span>
+            <Logo size={72} />
           </div>
 
           {/* Expanding line */}
