@@ -3,18 +3,23 @@ import Section from "./Section";
 const steps = [
   {
     number: "01",
-    title: "Discover",
-    description: "Clarify goals, pages, content, and brand direction.",
+    title: "Strategy Mapping",
+    description: "Define goals, audience, positioning, and system requirements.",
   },
   {
     number: "02",
-    title: "Build",
-    description: "Modern Next.js + Tailwind implementation with scalable structure.",
+    title: "Design & Build",
+    description: "Premium UI built with Next.js + Tailwind — fast, clean, on-brand.",
   },
   {
     number: "03",
-    title: "Deploy",
-    description: "Vercel deployment, DNS configuration, and launch support.",
+    title: "Automation Setup",
+    description: "Wire up workflows, AI integrations, lead capture, and follow-ups.",
+  },
+  {
+    number: "04",
+    title: "Launch & Support",
+    description: "Deploy to production, configure DNS, and provide post-launch support.",
   },
 ];
 
@@ -23,9 +28,9 @@ export default function Process() {
     <Section
       id="process"
       title="Process"
-      subtitle="How I work — simple and direct."
+      subtitle="Simple. Clean. Professional."
     >
-      <div className="grid gap-3 sm:grid-cols-3">
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {steps.map((s) => (
           <div key={s.number} className="glass-card rounded-2xl p-4">
             <span className="mb-2 block text-2xl font-extrabold text-indigo/40">

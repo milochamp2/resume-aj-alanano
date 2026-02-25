@@ -7,36 +7,35 @@ import StickyCTA from "@/components/StickyCTA";
 
 export const metadata: Metadata = {
   title: {
-    default: "AJ Alanano — Full-Stack Developer (Vibe Coder)",
+    default: "AJ Alanano — Premium Web & Automation Systems for Startups",
     template: "%s | AJ Alanano",
   },
   description:
-    "Full-stack developer building automation-first, AI-integrated web systems for serious businesses. Next.js, Supabase, n8n/Zapier, GPT + Claude.",
+    "Launch your startup with a premium web and automation system. High-converting landing pages with automation built in from day one. Next.js, Supabase, n8n, AI integrations.",
   keywords: [
     "AJ Alanano",
-    "Full-Stack Developer",
-    "Next.js",
-    "React",
-    "TypeScript",
-    "Supabase",
-    "Tailwind CSS",
+    "Startup Website",
+    "Premium Landing Page",
+    "Web Automation",
     "AI Integration",
-    "Automation",
+    "Next.js",
+    "SaaS Launch",
+    "n8n Automation",
     "Vercel",
   ],
   authors: [{ name: "AJ Alanano" }],
   openGraph: {
-    title: "AJ Alanano — Full-Stack Developer (Vibe Coder)",
+    title: "AJ Alanano — Premium Web & Automation Systems for Startups",
     description:
-      "Automation-first, AI-integrated web systems for serious businesses.",
+      "High-converting launch websites with automation built in from day one.",
     type: "website",
     locale: "en_AU",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AJ Alanano — Full-Stack Developer (Vibe Coder)",
+    title: "AJ Alanano — Premium Web & Automation Systems for Startups",
     description:
-      "Automation-first, AI-integrated web systems for serious businesses.",
+      "High-converting launch websites with automation built in from day one.",
   },
   robots: { index: true, follow: true },
 };

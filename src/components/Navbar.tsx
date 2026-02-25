@@ -1,44 +1,37 @@
 "use client";
 
 import { useState } from "react";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
 import Logo from "./Logo";
 
 const links = [
-  { href: "/", label: "Home" },
-  { href: "/stack", label: "Stack" },
-  { href: "/projects", label: "Projects" },
-  { href: "/impact", label: "Impact" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+  { href: "#", label: "Home" },
+  { href: "#problem", label: "Problem" },
+  { href: "#solution", label: "Solution" },
+  { href: "#different", label: "Different" },
+  { href: "#process", label: "Process" },
+  { href: "#pricing", label: "Pricing" },
 ];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const pathname = usePathname();
 
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-white/[0.06] bg-navy/60 backdrop-blur-xl">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-2.5">
-        <Link href="/" className="flex items-center">
+        <a href="#" className="flex items-center">
           <Logo size={26} />
-        </Link>
+        </a>
 
         {/* Desktop */}
         <ul className="hidden gap-6 md:flex">
           {links.map((l) => (
             <li key={l.href}>
-              <Link
+              <a
                 href={l.href}
-                className={`text-sm transition-colors ${
-                  pathname === l.href
-                    ? "font-medium text-white"
-                    : "text-slate-400 hover:text-white"
-                }`}
+                className="text-sm text-slate-400 transition-colors hover:text-white"
               >
                 {l.label}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
@@ -78,17 +71,13 @@ export default function Navbar() {
         <ul className="glass-strong border-t border-white/[0.06] px-6 pb-3 md:hidden">
           {links.map((l) => (
             <li key={l.href}>
-              <Link
+              <a
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className={`block py-1.5 text-sm transition-colors ${
-                  pathname === l.href
-                    ? "font-medium text-white"
-                    : "text-slate-400 hover:text-white"
-                }`}
+                className="block py-1.5 text-sm text-slate-400 transition-colors hover:text-white"
               >
                 {l.label}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>

@@ -1,4 +1,4 @@
-import Link from "next/link";
+const BOOKING_URL = "https://calendly.com/alananoaj/mvp-call";
 
 export default function Hero() {
   return (
@@ -15,58 +15,36 @@ export default function Hero() {
         <div className="mb-5 flex flex-wrap items-center justify-center gap-2">
           <span className="glass inline-flex items-center gap-1.5 rounded-full border-aqua/20 px-3 py-1 text-xs font-medium text-aqua">
             <span className="inline-block h-1.5 w-1.5 rounded-full bg-aqua animate-pulse" />
-            Available for freelance &amp; collaborations
+            Accepting New Clients
           </span>
           <span className="glass inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium text-slate-400">
             Based in Australia
           </span>
-          <span className="glass inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium text-slate-400">
-            Full-Stack + AI Systems
-          </span>
         </div>
 
         <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl">
-          AJ Alanano{" "}
+          Launch Your Startup With a{" "}
           <span className="bg-gradient-to-r from-indigo-light to-aqua bg-clip-text text-transparent">
-            — Full-Stack Developer
+            Premium Web &amp; Automation System
           </span>
           <br />
-          <span className="text-slate-400">(Vibe Coder)</span>
+          <span className="text-slate-400">— Not Just a Website.</span>
         </h1>
 
         <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg">
-          I build automation-first, AI-integrated web systems for serious
-          businesses — using Next.js, Supabase, n8n/Zapier, and GPT + Claude.
+          I help early-stage SaaS and AI founders build high-converting launch
+          websites with automation built in from day one.
         </p>
 
-        <p className="mx-auto mt-2 max-w-xl text-sm text-slate-400">
-          Premium landing pages. Brand-conscious UI. Automation + AI system
-          builds. Clean architecture that scales.
-        </p>
-
-        {/* CTAs */}
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
-          <Link
-            href="/contact"
-            className="btn-glow relative z-10 rounded-2xl bg-indigo/90 px-5 py-2.5 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-indigo-light hover:shadow-lg hover:shadow-indigo/25"
-          >
-            Start a Project
-          </Link>
+        {/* CTA */}
+        <div className="mt-6">
           <a
-            href="https://www.linkedin.com/in/alananoaj7/"
+            href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="glass rounded-2xl px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-white/10"
+            className="btn-glow relative z-10 inline-block rounded-2xl bg-indigo/90 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-indigo-light hover:shadow-lg hover:shadow-indigo/25 hover:scale-105"
           >
-            LinkedIn
-          </a>
-          <a
-            href="https://github.com/milochamp2"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="glass rounded-2xl px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-white/10"
-          >
-            GitHub
+            Book a Free Launch Strategy Call
           </a>
         </div>
       </div>
