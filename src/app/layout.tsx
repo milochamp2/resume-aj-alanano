@@ -7,14 +7,14 @@ import StickyCTA from "@/components/StickyCTA";
 
 export const metadata: Metadata = {
   title: {
-    default: "AJ Alanano — Web Developer (Vibe Coder)",
+    default: "AJ Alanano — Full-Stack Developer (Vibe Coder)",
     template: "%s | AJ Alanano",
   },
   description:
-    "I build modern Next.js websites, dashboards, and automation systems using Tailwind CSS, Supabase, n8n/Zapier, and AI (GPT + Claude).",
+    "Full-stack developer building automation-first, AI-integrated web systems for serious businesses. Next.js, Supabase, n8n/Zapier, GPT + Claude.",
   keywords: [
     "AJ Alanano",
-    "Web Developer",
+    "Full-Stack Developer",
     "Next.js",
     "React",
     "TypeScript",
@@ -26,17 +26,17 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "AJ Alanano" }],
   openGraph: {
-    title: "AJ Alanano — Web Developer (Vibe Coder)",
+    title: "AJ Alanano — Full-Stack Developer (Vibe Coder)",
     description:
-      "Modern Next.js websites, dashboards, and AI-powered automation systems.",
+      "Automation-first, AI-integrated web systems for serious businesses.",
     type: "website",
     locale: "en_AU",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AJ Alanano — Web Developer (Vibe Coder)",
+    title: "AJ Alanano — Full-Stack Developer (Vibe Coder)",
     description:
-      "Modern Next.js websites, dashboards, and AI-powered automation systems.",
+      "Automation-first, AI-integrated web systems for serious businesses.",
   },
   robots: { index: true, follow: true },
 };

@@ -21,28 +21,27 @@ export default function Hero() {
             Based in Australia
           </span>
           <span className="glass inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium text-slate-400">
-            Next.js + AI Integrations
+            Full-Stack + AI Systems
           </span>
         </div>
 
         <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl">
           AJ Alanano{" "}
           <span className="bg-gradient-to-r from-indigo-light to-aqua bg-clip-text text-transparent">
-            — Web Developer
+            — Full-Stack Developer
           </span>
           <br />
           <span className="text-slate-400">(Vibe Coder)</span>
         </h1>
 
         <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg">
-          I build modern Next.js websites, analytics dashboards, and
-          automation-first systems using Tailwind CSS, Supabase, n8n/Zapier, and
-          AI (GPT + Claude).
+          I build automation-first, AI-integrated web systems for serious
+          businesses — using Next.js, Supabase, n8n/Zapier, and GPT + Claude.
         </p>
 
         <p className="mx-auto mt-2 max-w-xl text-sm text-slate-400">
-          Clean UI. Fast builds. Scalable foundations. Currently learning
-          Supabase for full-stack back-end development.
+          Premium landing pages. Brand-conscious UI. Automation + AI system
+          builds. Clean architecture that scales.
         </p>
 
         {/* CTAs */}

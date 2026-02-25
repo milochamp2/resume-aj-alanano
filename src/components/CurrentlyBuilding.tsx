@@ -2,21 +2,21 @@ import Section from "./Section";
 
 const builds = [
   {
-    title: "Learning Supabase Back End",
+    title: "Full-Stack Supabase Systems",
     description:
-      "Diving into PostgreSQL, Auth, Storage, and Edge Functions for full-stack development.",
-    status: "Learning",
-  },
-  {
-    title: "Automation Workflows with n8n",
-    description:
-      "Designing multi-step automation pipelines connecting APIs, databases, and AI models.",
+      "Building production back-end architectures with PostgreSQL, Auth, Storage, and Edge Functions.",
     status: "In Progress",
   },
   {
-    title: "AI-Powered Tools",
+    title: "n8n Automation Pipelines",
     description:
-      "Building GPT and Claude-powered tools that streamline workflows for small teams.",
+      "Designing multi-step workflows connecting APIs, databases, and AI models for clients.",
+    status: "In Progress",
+  },
+  {
+    title: "AI-Integrated Client Tools",
+    description:
+      "GPT and Claude-powered tools that streamline operations for serious businesses.",
     status: "In Progress",
   },
 ];

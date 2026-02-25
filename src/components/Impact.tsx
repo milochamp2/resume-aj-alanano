@@ -2,19 +2,19 @@ import Section from "./Section";
 
 const metrics = [
   {
-    stat: "3",
-    label: "Websites Shipped",
-    description: "Client website, analytics dashboards, and personal tools built and deployed.",
-  },
-  {
-    stat: "Fast",
-    label: "Build to Deploy",
-    description: "From design to production using Next.js + Vercel with clean architecture.",
+    stat: "Full-Stack",
+    label: "End-to-End Delivery",
+    description: "From brand-conscious UI to Supabase back end — shipped and deployed on Vercel.",
   },
   {
     stat: "60%",
     label: "Workflow Time Saved",
-    description: "Through automation pipelines built with n8n and Zapier integrations.",
+    description: "Through automation pipelines built with n8n, Zapier, and AI integrations.",
+  },
+  {
+    stat: "AI-First",
+    label: "Intelligent Systems",
+    description: "GPT and Claude integrated into workflows, tools, and client-facing products.",
   },
 ];
 

@@ -2,28 +2,28 @@ import Section from "./Section";
 
 const layers = [
   {
-    label: "Core Stack",
+    label: "Frontend",
     color: "text-aqua",
     borderColor: "border-aqua/20",
     items: ["Next.js", "React", "TypeScript", "JavaScript", "Tailwind CSS"],
   },
   {
+    label: "Back End",
+    color: "text-aqua-light",
+    borderColor: "border-aqua/15",
+    items: ["Supabase", "PostgreSQL", "Auth", "Storage", "Edge Functions", "API Integration"],
+  },
+  {
     label: "Automation & AI",
     color: "text-indigo-light",
     borderColor: "border-indigo/20",
-    items: ["n8n", "Zapier", "OpenAI GPT", "Claude API", "Webhooks"],
+    items: ["n8n", "Zapier", "OpenAI GPT", "Claude API", "Webhooks", "Structured Outputs"],
   },
   {
-    label: "Back End (Learning)",
-    color: "text-aqua-light",
-    borderColor: "border-aqua/15",
-    items: ["Supabase", "PostgreSQL", "Auth", "Storage", "API Integration"],
-  },
-  {
-    label: "Deployment",
+    label: "Deployment & Branding",
     color: "text-slate-300",
     borderColor: "border-white/10",
-    items: ["Vercel", "DNS & Domain Setup"],
+    items: ["Vercel", "DNS & Domains", "Brand-Conscious UI"],
   },
 ];
 
