@@ -308,3 +308,24 @@ html {
   background: rgba(79, 70, 229, 0.12);
   border-color: rgba(79, 70, 229, 0.3);
 }
+
+/* Social icon button */
+.social-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  color: #94a3b8;
+  transition: all 0.2s ease;
+}
+
+.social-icon-btn:hover {
+  border-color: rgba(79, 70, 229, 0.4);
+  background: rgba(79, 70, 229, 0.1);
+  color: #e2e8f0;
+  transform: translateY(-2px);
+}
