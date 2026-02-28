@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
 import StickyCTA from "@/components/StickyCTA";
+import ThemeProvider from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
   title: {
@@ -50,12 +51,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className="antialiased">
-        <SmoothScroll>
-          <Navbar />
-          <main className="pt-12">{children}</main>
-          <Footer />
-          <StickyCTA />
-        </SmoothScroll>
+        <ThemeProvider>
+          <SmoothScroll>
+            <Navbar />
+            <main className="pt-12">{children}</main>
+            <Footer />
+            <StickyCTA />
+          </SmoothScroll>
+        </ThemeProvider>
       </body>
     </html>
   );

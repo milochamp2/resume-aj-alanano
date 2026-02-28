@@ -329,3 +329,249 @@ html {
   color: #e2e8f0;
   transform: translateY(-2px);
 }
+
+/* ===================== */
+/* Navbar theme classes  */
+/* ===================== */
+.navbar-bg {
+  border-color: rgba(255, 255, 255, 0.06);
+  background: rgba(11, 16, 32, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.nav-link {
+  color: #94a3b8;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-link-active {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.mobile-menu {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+/* ======================== */
+/* LIGHT MODE OVERRIDES     */
+/* ======================== */
+html.light body {
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+html.light ::selection {
+  background-color: rgba(79, 70, 229, 0.2);
+  color: #1e293b;
+}
+
+/* Navbar */
+html.light .navbar-bg {
+  border-color: rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+html.light .nav-link {
+  color: #64748b;
+}
+
+html.light .nav-link:hover {
+  color: #0f172a;
+}
+
+html.light .nav-link-active {
+  color: #0f172a;
+}
+
+html.light .mobile-menu {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+/* Glass cards */
+html.light .glass {
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+html.light .glass-strong {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+html.light .glass-card {
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+html.light .glass-card:hover {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(79, 70, 229, 0.2);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.06),
+    0 0 0 1px rgba(79, 70, 229, 0.08);
+}
+
+/* Tech badge */
+html.light .tech-badge {
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #334155;
+}
+
+html.light .tech-badge:hover {
+  background: rgba(79, 70, 229, 0.08);
+  border-color: rgba(79, 70, 229, 0.2);
+}
+
+/* Social icon button */
+html.light .social-icon-btn {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.02);
+  color: #475569;
+}
+
+html.light .social-icon-btn:hover {
+  border-color: rgba(79, 70, 229, 0.3);
+  background: rgba(79, 70, 229, 0.06);
+  color: #1e293b;
+}
+
+/* Timeline */
+html.light .timeline-node {
+  background: #ffffff;
+}
+
+/* Theme toggle button in light mode */
+html.light .light-toggle {
+  border-color: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.02);
+  color: #475569;
+}
+
+html.light .light-toggle:hover {
+  border-color: rgba(79, 70, 229, 0.3);
+  background: rgba(79, 70, 229, 0.06);
+  color: #1e293b;
+}
+
+/* StickyCTA in light mode */
+html.light .btn-glow {
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.15);
+}
+
+/* =============================== */
+/* Light mode text color overrides */
+/* =============================== */
+html.light .text-white {
+  color: #0f172a;
+}
+
+html.light .text-slate-300 {
+  color: #475569;
+}
+
+html.light .text-slate-400 {
+  color: #64748b;
+}
+
+html.light .text-slate-500 {
+  color: #94a3b8;
+}
+
+html.light .text-slate-600 {
+  color: #94a3b8;
+}
+
+/* Keep gradient text visible in light mode */
+html.light .from-indigo-light {
+  --tw-gradient-from: #4F46E5;
+}
+
+html.light .to-aqua {
+  --tw-gradient-to: #0891b2;
+}
+
+/* Light mode border overrides */
+html.light .border-white\/\[0\.06\] {
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+html.light .border-white\/10 {
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+html.light .border-white\/15 {
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+/* Light mode bg overrides */
+html.light .bg-white\/\[0\.02\] {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+html.light .bg-white\/\[0\.03\] {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+html.light .bg-white\/5 {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Gradient blobs - lighter in light mode */
+html.light .bg-indigo\/20 {
+  background-color: rgba(79, 70, 229, 0.08);
+}
+
+html.light .bg-indigo\/10 {
+  background-color: rgba(79, 70, 229, 0.05);
+}
+
+html.light .bg-aqua\/10 {
+  background-color: rgba(34, 211, 238, 0.06);
+}
+
+/* Project card gradient placeholders */
+html.light .from-indigo\/20 {
+  --tw-gradient-from: rgba(79, 70, 229, 0.08);
+}
+
+html.light .to-aqua\/10 {
+  --tw-gradient-to: rgba(34, 211, 238, 0.06);
+}
+
+/* Footer */
+html.light footer {
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+/* Keep indigo-light readable */
+html.light .text-indigo-light {
+  color: #4F46E5;
+}
+
+html.light .border-indigo\/30 {
+  border-color: rgba(79, 70, 229, 0.15);
+}
+
+/* Light mode background overrides */
+html.light .bg-navy {
+  background-color: #ffffff;
+}
+
+html.light .bg-navy\/80 {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+html.light .bg-indigo\/10 {
+  background-color: rgba(79, 70, 229, 0.06);
+}

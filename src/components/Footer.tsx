@@ -1,9 +1,10 @@
+import Link from "next/link";
 import Logo from "./Logo";
 
 const navLinks = [
-  { href: "#", label: "Home" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
+  { href: "/", label: "Home" },
+  { href: "/projects", label: "Projects" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Footer() {
@@ -12,19 +13,21 @@ export default function Footer() {
       <div className="mx-auto max-w-5xl px-6">
         {/* Logo */}
         <div className="mb-4 flex justify-center">
-          <Logo size={32} />
+          <Link href="/">
+            <Logo size={32} />
+          </Link>
         </div>
 
         {/* Nav links */}
         <div className="mb-5 flex items-center justify-center gap-6">
           {navLinks.map((l) => (
-            <a
+            <Link
               key={l.label}
               href={l.href}
               className="hover-underline text-sm text-slate-400 transition-colors hover:text-white"
             >
               {l.label}
-            </a>
+            </Link>
           ))}
         </div>
 

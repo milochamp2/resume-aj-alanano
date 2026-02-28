@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -74,18 +75,18 @@ export default function Hero() {
           variants={itemVariants}
           className="mt-7 flex flex-wrap items-center justify-center gap-3"
         >
-          <a
-            href="#projects"
+          <Link
+            href="/projects"
             className="btn-glow relative z-10 rounded-full bg-indigo px-7 py-3 text-sm font-semibold text-white transition-all hover:bg-indigo-light hover:shadow-lg hover:shadow-indigo/25 hover:scale-105"
           >
             View My Work
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            href="/contact"
             className="rounded-full border border-white/15 px-7 py-3 text-sm font-semibold text-white transition-all hover:border-white/30 hover:bg-white/5"
           >
             Get In Touch
-          </a>
+          </Link>
         </motion.div>
 
         {/* Social icon buttons */}
