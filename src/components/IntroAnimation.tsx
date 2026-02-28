@@ -49,7 +49,7 @@ export default function IntroAnimation({
             className="animate-intro-fade-up mt-4 text-sm tracking-widest text-slate-400 opacity-0"
             style={{ animationDelay: "0.9s" }}
           >
-            PREMIUM LAUNCH SYSTEMS
+            WEB DEVELOPER &amp; AUTOMATION
           </p>
         </div>
       )}

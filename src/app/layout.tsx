@@ -7,35 +7,37 @@ import StickyCTA from "@/components/StickyCTA";
 
 export const metadata: Metadata = {
   title: {
-    default: "AJ Alanano — Premium Web & Automation Systems for Startups",
+    default: "AJ Alanano — Web Developer & Automation Specialist",
     template: "%s | AJ Alanano",
   },
   description:
-    "Launch your startup with a premium web and automation system. High-converting landing pages with automation built in from day one. Next.js, Supabase, n8n, AI integrations.",
+    "Modern Web Developer with hands-on experience building full-stack websites, automation workflows, and marketing systems. TypeScript, Next.js, Tailwind CSS, Zapier, n8n.",
   keywords: [
     "AJ Alanano",
-    "Startup Website",
-    "Premium Landing Page",
-    "Web Automation",
-    "AI Integration",
+    "Web Developer",
+    "Automation Specialist",
+    "TypeScript",
     "Next.js",
-    "SaaS Launch",
-    "n8n Automation",
-    "Vercel",
+    "React",
+    "Tailwind CSS",
+    "n8n",
+    "Zapier",
+    "Philippines",
+    "Remote Developer",
   ],
   authors: [{ name: "AJ Alanano" }],
   openGraph: {
-    title: "AJ Alanano — Premium Web & Automation Systems for Startups",
+    title: "AJ Alanano — Web Developer & Automation Specialist",
     description:
-      "High-converting launch websites with automation built in from day one.",
+      "Full-stack websites, automation workflows, and marketing systems.",
     type: "website",
-    locale: "en_AU",
+    locale: "en_PH",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AJ Alanano — Premium Web & Automation Systems for Startups",
+    title: "AJ Alanano — Web Developer & Automation Specialist",
     description:
-      "High-converting launch websites with automation built in from day one.",
+      "Full-stack websites, automation workflows, and marketing systems.",
   },
   robots: { index: true, follow: true },
 };

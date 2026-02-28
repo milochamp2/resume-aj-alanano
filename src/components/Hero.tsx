@@ -1,4 +1,24 @@
-const BOOKING_URL = "https://calendly.com/alananoaj/mvp-call";
+"use client";
+
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.12 },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20, filter: "blur(4px)" },
+  visible: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: { duration: 0.5 },
+  },
+};
 
 export default function Hero() {
   return (
@@ -10,44 +30,99 @@ export default function Hero() {
         <div className="animate-gradient-drift absolute bottom-1/4 left-1/4 h-[220px] w-[220px] rounded-full bg-indigo/10 blur-[100px]" />
       </div>
 
-      <div className="relative mx-auto max-w-5xl px-6 text-center">
-        {/* Meta badges */}
-        <div className="mb-5 flex flex-wrap items-center justify-center gap-2">
+      <motion.div
+        className="relative mx-auto max-w-5xl px-6 text-center"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        {/* Name */}
+        <motion.h1
+          variants={itemVariants}
+          className="text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl"
+        >
+          AJ Alanano
+        </motion.h1>
+
+        {/* Title */}
+        <motion.p
+          variants={itemVariants}
+          className="mt-2 text-xl font-semibold sm:text-2xl"
+        >
+          <span className="bg-gradient-to-r from-indigo-light to-aqua bg-clip-text text-transparent">
+            Web Developer &amp; Automation Specialist
+          </span>
+        </motion.p>
+
+        {/* Location & availability badges */}
+        <motion.div
+          variants={itemVariants}
+          className="mt-4 flex flex-wrap items-center justify-center gap-2"
+        >
           <span className="glass inline-flex items-center gap-1.5 rounded-full border-aqua/20 px-3 py-1 text-xs font-medium text-aqua">
-            <span className="inline-block h-1.5 w-1.5 rounded-full bg-aqua animate-pulse" />
-            Accepting New Clients
+            <span className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-aqua" />
+            Open to Remote Roles
           </span>
           <span className="glass inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium text-slate-400">
-            Based in Australia
+            Philippines
           </span>
-        </div>
+        </motion.div>
 
-        <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl">
-          Launch Your Startup With a{" "}
-          <span className="bg-gradient-to-r from-indigo-light to-aqua bg-clip-text text-transparent">
-            Premium Web &amp; Automation System
-          </span>
-          <br />
-          <span className="text-slate-400">— Not Just a Website.</span>
-        </h1>
-
-        <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg">
-          I help early-stage SaaS and AI founders build high-converting launch
-          websites with automation built in from day one.
-        </p>
-
-        {/* CTA */}
-        <div className="mt-6">
+        {/* Email */}
+        <motion.div variants={itemVariants} className="mt-4">
           <a
-            href={BOOKING_URL}
+            href="mailto:alananoaj@gmail.com"
+            className="hover-underline text-sm text-aqua"
+          >
+            alananoaj@gmail.com
+          </a>
+        </motion.div>
+
+        {/* Social links */}
+        <motion.div
+          variants={itemVariants}
+          className="mt-3 flex items-center justify-center gap-4"
+        >
+          <a
+            href="https://www.linkedin.com/in/alananoaj7/"
             target="_blank"
             rel="noopener noreferrer"
+            className="hover-underline text-sm text-slate-300 transition-colors hover:text-white"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/milochamp2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover-underline text-sm text-slate-300 transition-colors hover:text-white"
+          >
+            GitHub
+          </a>
+        </motion.div>
+
+        {/* Summary */}
+        <motion.p
+          variants={itemVariants}
+          className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-300"
+        >
+          Modern Web Developer with hands-on experience building full-stack
+          websites, automation workflows, and marketing systems. Experienced in
+          TypeScript, Next.js, Tailwind CSS, and workflow automation using Zapier
+          and n8n. Strong understanding of UI/UX, marketing funnels, and
+          business process automation.
+        </motion.p>
+
+        {/* CTA */}
+        <motion.div variants={itemVariants} className="mt-6">
+          <a
+            href="#contact"
             className="btn-glow relative z-10 inline-block rounded-2xl bg-indigo/90 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-indigo-light hover:shadow-lg hover:shadow-indigo/25 hover:scale-105"
           >
-            Book a Free Launch Strategy Call
+            Get in Touch
           </a>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

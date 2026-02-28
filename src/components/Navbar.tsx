@@ -5,11 +5,11 @@ import Logo from "./Logo";
 
 const links = [
   { href: "#", label: "Home" },
-  { href: "#problem", label: "Problem" },
-  { href: "#solution", label: "Solution" },
-  { href: "#different", label: "Different" },
-  { href: "#process", label: "Process" },
-  { href: "#pricing", label: "Pricing" },
+  { href: "#experience", label: "Experience" },
+  { href: "#tech-stack", label: "Tech Stack" },
+  { href: "#projects", label: "Projects" },
+  { href: "#impact", label: "Impact" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function Navbar() {
